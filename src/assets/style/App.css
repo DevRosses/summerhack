@@ -25,9 +25,9 @@
 }
 
 .logo{
-height: 70PX;
-width: 240PX;
-margin-top: 8px;
+height: 60PX;
+width: 160PX;
+margin-top: 12px;
 }
 
 .main {
@@ -58,6 +58,12 @@ margin-top: 8px;
   .header{
     background-color: #00000075;
   }
+
+  .logo{
+    height: 70PX;
+    width: 240PX;
+    margin-top: 8px;
+    }
 
   .main{
     display: flex;
