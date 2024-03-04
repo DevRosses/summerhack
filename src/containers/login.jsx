@@ -1,8 +1,9 @@
-import '../assets/style/formulario.css'
+import '../assets/style/login.css'
 import { useState } from "react"
 
-function Formulario() {
-  const [usuario, setUsuario] = useState("")
+function login() {
+
+    const [usuario, setUsuario] = useState("")
   const [contrasena, setContrasena] = useState("")
 
   const handleChange = (e) => {
@@ -21,11 +22,9 @@ function Formulario() {
     alert('Acceso denegado ¡ Intenta de nuevo !')}
 }
 
-
-  return (
-    <>
-
-      <div className="txt">
+    return ( 
+        <>
+        <div className="txt">
     <h1>¡ Hola {usuario} ! </h1>
       </div>
 
@@ -52,8 +51,8 @@ function Formulario() {
       <div className="txt" >
         <h1 id="txt2"></h1>
       </div>
-    </>
-  );
+        </>
+     );
 }
 
-export default Formulario;
+export default login;

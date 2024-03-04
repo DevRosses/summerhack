@@ -1,7 +1,12 @@
 
 import '../assets/style/App.css'
-import Formulario from '../components/Formulario.jsx';
-import Logo from '../assets/statics/POPCORN.svg'
+import Footer from '../components/Footer.jsx';
+import Header from '../components/Header.jsx';
+import Login from '../containers/login.jsx';
+import Bienvenida from '../containers/bienvenida.jsx';
+import Registro from '../containers/registro.jsx';
+import Principal from './principal.jsx';
+import Notfound from './notFound.jsx';
 
 function App() {
 
@@ -9,18 +14,17 @@ function App() {
     <>
       <section className="form-layout">
 
-        <div className="header">
-          <img src={Logo} alt='popcorn logo' className='logo'/>
-        </div>
+        <Header></Header>
 
         <div className="main">
-          <Formulario></Formulario>
-        </div>
-        
-        <div className="footer">
-          <p>Rosario Ramos 2024 | SummerHack</p>
+          <Bienvenida></Bienvenida>
+          <Registro></Registro>
+          <Login></Login>
+          <Principal></Principal>
+          <Notfound></Notfound>
         </div>
 
+        <Footer></Footer>
       </section>
     </>
   )

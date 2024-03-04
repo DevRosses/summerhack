@@ -1,0 +1,30 @@
+
+.header {
+    grid-area: header;
+    color: #777;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo{
+    height: 60PX;
+    width: 160PX;
+    margin-top: 12px;
+    }
+
+@media only screen and (min-width: 740px) {
+
+    .header{
+      background-color: #00000080;
+    }
+    
+  .logo{
+    height: 60PX;
+    width: 165PX;
+    margin-left: 40px;
+    margin-top: 16px;
+    }
+    
+  }

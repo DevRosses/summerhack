@@ -1,0 +1,15 @@
+.footer {
+    grid-area: footer;
+    box-sizing: border-box;
+    color: #777;
+    padding: 16px 16px 0 16px;
+    font-weight: 400;
+    font-size: 1.1em;
+  }
+
+  
+@media only screen and (min-width: 740px) {
+    .footer{
+      background-color: #00000075;
+    }
+  }
