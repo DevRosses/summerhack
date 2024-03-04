@@ -16,7 +16,7 @@ function Formulario() {
 
   const handleClick = () => {
     if( usuario == 'rosario' && contrasena == '1'){
-      txt2.innerHTML = `<h3>Bienvenido ${usuario} a nuestro sitio web.</h3>`
+      txt2.innerHTML = `Bienvenido ${usuario} a nuestro sitio web.`
   } else{
     alert('Acceso denegado ¡ Intenta de nuevo !')}
 }
@@ -24,9 +24,8 @@ function Formulario() {
 
   return (
     <>
-    <div className="contenedor">
 
-      <div className="txt1">
+      <div className="txt">
     <h1>¡ Hola {usuario} ! </h1>
       </div>
 
@@ -45,14 +44,13 @@ function Formulario() {
         </div>
 
         <div className="d-grid">
-        <button className="btn btn-primary" type="submit" onClick={handleClick}>ENTRAR</button>
+        <button className="btn btn-danger" type="submit" onClick={handleClick}>ENTRAR</button>
         </div>
 
       </div>
 
-      <div className="txt2" id='txt2'>
-      </div>
-      
+      <div className="txt" >
+        <h1 id="txt2"></h1>
       </div>
     </>
   );

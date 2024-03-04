@@ -1,82 +1,77 @@
-.contenedor {
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  color: #f9f9f9;
-  display: grid;
-  grid:
-    "txt1" auto "form-contenedor" 1fr "txt2" auto / 1fr;
-  box-sizing: border-box;
+.txt {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
-
-.txt1{
-  margin: 0;
-  height: 20%;
-  padding-top: 24px;
-} 
+h1 {
+  font-weight: 600;
+  font-size: 2.5em;
+}
 
 .form-contenedor {
   box-sizing: border-box;
   width: 100%;
-  height: 60%;
-  padding: 32px;
-  border-radius: 8px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px;
 }
 
-.txt2 {
-  margin: 0;
-  height: 20%;
-  padding-bottom: 24px;
-}
-
-.inicia-txt{
+.inicia-txt {
   text-align: start;
-  padding-top: 8px;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
+  font-weight: 500;
+  font-size: 1.1em;
 }
 
-.form-control{
+
+.form-control {
   height: 50px;
   background-color: #252525f5;
   color: #777;
   border: none;
 }
 
-.label-txt{
+
+
+.label-txt {
   color: #999;
-  font-weight: 100;
+  font-weight: 200;
+  font-size: 1em;
 }
 
-.d-grid{
+.d-grid {
   padding-top: 32px;
   padding-bottom: 8px;
 }
 
-.btn{
+.btn {
   height: 50px;
-  background-color: rgb(216, 33, 5);
+  background-color: #e50914;
   border: none;
+  font-weight: 600;
+  font-size: 1.1em;
 }
 
 
 @media only screen and (min-width: 740px) {
 
-  .contenedor{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 16px;
+  .txt {
+    height: 15%;
   }
+
 
   .form-contenedor {
     box-sizing: border-box;
-    width: 50%;
-    padding: 32px;
+    width: 400px;
+    height: 65%;
     border-radius: 8px;
     background: #000000c7;
+
   }
 
 }

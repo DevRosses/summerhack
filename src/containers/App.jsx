@@ -1,7 +1,7 @@
 
 import '../assets/style/App.css'
-import Formulario from '../components/Formulario.jsx'
-import imagen from '../assets/statics/back.jpg'
+import Formulario from '../components/Formulario.jsx';
+import Logo from '../assets/statics/POPCORN.svg'
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
       <section className="form-layout">
 
         <div className="header">
-          <h6>Header</h6>
+          <img src={Logo} alt='popcorn logo' className='logo'/>
         </div>
 
         <div className="main">
@@ -18,7 +18,7 @@ function App() {
         </div>
         
         <div className="footer">
-          <h6>Footer</h6>
+          <p>Rosario Ramos 2024 | SummerHack</p>
         </div>
 
       </section>
