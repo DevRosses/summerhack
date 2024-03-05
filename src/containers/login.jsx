@@ -3,29 +3,36 @@ import { useState } from "react"
 
 function login() {
 
-    const [usuario, setUsuario] = useState("")
-  const [contrasena, setContrasena] = useState("")
+  let caja = [{usuario:"rosario", clave:1}, {usuario:"jony", clave:2}, {usuario:"pepeloco", clave:3}]
+
+  const [usuario, setUsuario] = useState("")
+  const [clave, setClave] = useState("")
 
   const handleChange = (e) => {
     if (e.target.name === "usuario") {
       setUsuario(e.target.value)
+      console.log(`El usuario es ${e.target.value}`)
     } else {
-      setContrasena(e.target.value)
-      console.log(`La contraseña es ${e.target.value}`)
+      setClave(e.target.value)
+      console.log(`La clave es ${e.target.value}`)
     }
   }
 
   const handleClick = () => {
-    if( usuario == 'rosario' && contrasena == '1'){
-      txt2.innerHTML = `Bienvenido ${usuario} a nuestro sitio web.`
-  } else{
-    alert('Acceso denegado ¡ Intenta de nuevo !')}
-}
+    // Aquí va el código para validar    
+      if (caja.findIndex((item) => item.usuario === usuario && item.clave === clave)) {
+        txt2.innerHTML = `Bienvenido ${usuario} a nuestro sitio web.`
+        console.log(`2El usuario es ${usuario}`)
+        console.log(`2La clave es ${clave}`)
+    } else {
+      alert('Acceso denegado ¡ Intenta de nuevo !')
+    }
+  }
 
-    return ( 
-        <>
-        <div className="txt">
-    <h1>¡ Hola {usuario} ! </h1>
+  return (
+    <>
+      <div className="txt">
+        <h1>¡ Hola {usuario} ! </h1>
       </div>
 
       <div className='form-contenedor'>
@@ -43,7 +50,7 @@ function login() {
         </div>
 
         <div className="d-grid">
-        <button className="btn btn-danger" type="submit" onClick={handleClick}>ENTRAR</button>
+          <button className="btn btn-danger" type="submit" onClick={handleClick}>ENTRAR</button>
         </div>
 
       </div>
@@ -51,8 +58,8 @@ function login() {
       <div className="txt" >
         <h1 id="txt2"></h1>
       </div>
-        </>
-     );
+    </>
+  );
 }
 
 export default login;
