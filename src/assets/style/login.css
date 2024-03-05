@@ -61,18 +61,28 @@
   @media only screen and (min-width: 740px) {
   
     .txt {
-      height: 15%;
+      height: 12%;
       padding: 0;
+    }
+
+    h1{
+      margin: 0;
     }
   
   
     .form-contenedor {
       box-sizing: border-box;
       width: 400px;
-      height: 65%;
+      height: 70%;
       border-radius: 8px;
       background: #000000c7;
   
+    }
+
+    .registrate{
+      font-weight: 200;
+      margin: 0;
+      cursor: pointer;
     }
   
   }

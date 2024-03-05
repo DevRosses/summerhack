@@ -3,7 +3,7 @@ import { useState } from "react"
 
 function login() {
 
-  let caja = [{usuario:"rosario", clave:1}, {usuario:"jony", clave:2}, {usuario:"pepeloco", clave:3}]
+  let caja = [{usuario:"rosario", clave:1}, {usuario:"jony", clave:2}, {usuario:"pepeloco", clave:3}, {usuario:"peperina", clave:4}]
 
   const [usuario, setUsuario] = useState("")
   const [clave, setClave] = useState("")
@@ -29,6 +29,11 @@ function login() {
     }
   }
 
+  const handleCheck = () => {
+    // registro.style.display = "block";
+    // login.style.display = "none";
+  }
+
   return (
     <>
       <div className="txt">
@@ -52,6 +57,8 @@ function login() {
         <div className="d-grid">
           <button className="btn btn-danger" type="submit" onClick={handleClick}>ENTRAR</button>
         </div>
+
+        <p className="registrate" onClick={handleCheck}>Registrate</p>
 
       </div>
 
