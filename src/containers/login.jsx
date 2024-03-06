@@ -3,7 +3,7 @@ import { useState } from "react"
 
 function login() {
 
-  let caja = [{usuario:"rosario", clave:1}, {usuario:"jony", clave:2}, {usuario:"pepeloco", clave:3}, {usuario:"peperina", clave:4}]
+  let caja = [{usuario:"rosario", clave:7}, {usuario:"pepeloco", clave:22}, {usuario:"jony", clave:33}, {usuario:"peperina", clave:444}]
 
   const [usuario, setUsuario] = useState("")
   const [clave, setClave] = useState("")
